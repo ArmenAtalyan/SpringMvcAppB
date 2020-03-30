@@ -3,7 +3,7 @@
  "http://java.sun.com/dtd/web-app_2_3.dtd" >
 
 <!-- server read web.xml file's content and we must write here all what we want to server do
-we want the server redirect users HTTP requests to dispatcherServlet
+we want the server redirect users HTTP requests to dispatcherServlet to current controller,
 then it will go to our mvc app-->
 <web-app>
   <display-name>spring-mvc-app</display-name>
