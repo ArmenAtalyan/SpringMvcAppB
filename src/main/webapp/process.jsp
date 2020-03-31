@@ -5,6 +5,12 @@
     <title>My app</title>
 </head>
 <body>
-    <h1>It's a beauty day</h1>
+<h1>This is a process form</h1>
+<p>
+    Student name is ${param.studentName}
+</p>
+<p>
+    Message: ${message}
+</p>
 </body>
 </html>
