@@ -7,7 +7,7 @@
 <body>
 <h1>This is a process form</h1>
 <p>
-    Student name is ${param.studentName}
+    Student's name is ${param.studentName}
 </p>
 <p>
     Message: ${message}

@@ -3,11 +3,12 @@ package com;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.multipart.support.AbstractMultipartHttpServletRequest;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpServletRequest;
 
 @Controller
+@RequestMapping("/hello")
 public class HelloController {
 
     // need controller method to initial HTML form
@@ -23,15 +24,12 @@ public class HelloController {
     }
 
     // need controller method to read form data and add data to the model
-    @RequestMapping("/processFormTwo")
+    @RequestMapping("/processFormThree")
     public String otherProcessForm(
-            HttpServletRequest request, Model model){
-
-        //read the request parameter from the HTML form
-        String theName = request.getParameter("studentName");
+            @RequestParam("studentName") String theName, Model model){
 
         // convert tha data to all caps
-//        theName = theName.toUpperCase();
+        theName = theName.toUpperCase();
 
         // create the message
         String result = "Hello " + theName;

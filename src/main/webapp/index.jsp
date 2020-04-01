@@ -1,12 +1,20 @@
 <html>
-<body>
+
 <head>
     <meta charset="UTF-8">
     <title>My app</title>
 </head>
-<h2>Hello World!</h2>
+<h1>Hello World!</h1>
 
-<hr>
-<a href="showForm">Hello World Form</a>
+<body>
+
+<h3>
+    <a href="hello/showForm">Hello World Form</a>
+</h3>
+<h3>
+    <a href="student/showForm">Student Form</a>
+</h3>
+
 </body>
+
 </html>
