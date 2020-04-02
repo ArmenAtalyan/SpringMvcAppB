@@ -11,9 +11,8 @@ public class StudentController {
 
     @RequestMapping("/showForm")
     public String showForm(Model theModel){
-
         // create a student object and
-        // add student object to the model
+        // add it to the model
         theModel.addAttribute("student", new Student());
 
         return "studentForm";

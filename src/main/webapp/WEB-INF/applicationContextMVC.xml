@@ -18,4 +18,12 @@
         <property name="prefix" value="/"/>
         <property name="suffix" value=".jsp"/>
     </bean>
+
+    <!-- Load custom message resource -->
+    <bean id="messageSource"
+          class="org.springframework.context.support.ResourceBundleMessageSource" >
+
+        <property name="basename" value="resources/messages.properties" />
+    </bean>
+
 </beans>

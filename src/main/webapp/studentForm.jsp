@@ -10,10 +10,10 @@
 
 <body>
 
-<form:form action="processForm" modelAttribute="student" method="get">
+<form:form action="processForm" modelAttribute="student">
     First name: <form:input path="firstName"></form:input>
     <br><br>
-    Last name: <form:input path="lastName"></form:input>
+    Last name <form:input path="lastName"></form:input>
     <br><br>
     Country: <form:select path="country" items="${student.countryOptions}"/>
     <br><br>

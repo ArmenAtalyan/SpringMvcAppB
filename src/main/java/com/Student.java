@@ -1,8 +1,8 @@
 package com;
 
-import java.util.ArrayList;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 import java.util.LinkedHashMap;
-import java.util.List;
 
 public class Student {
 
